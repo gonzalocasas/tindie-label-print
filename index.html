@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://amaxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9em;
+        margin: 1em;
+        padding: 0;
+      }
+      .container-label {
+        width: 100%;
+      }
+      .from-label {
+        display: inline-block;
+        vertical-align: top;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+      }
+      .to-label {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        margin-top: 21px;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      address {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .page-break {
+        display: block;
+        page-break-before: always;
+      }
+
+      @media print {
+       @page {
+         size: landscape;
+         margin: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-label">
+      <div class="from-label">
+        <b>TO:</b>
+        <address></address>
+        <img class="qr-code">
+      </div>
+      <div class="to-label">
+        <b>FROM:</b>
+        <address></address>
+      </div>
+    </div>
+  </body>
+</html>
